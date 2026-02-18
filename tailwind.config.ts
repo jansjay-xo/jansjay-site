@@ -6,9 +6,9 @@ const config: Config = {
     extend: {
       colors: {
         base: "#0f172a",
-        accent: "#16a34a",
-        paper: "#f8fafc",
-        neon: "#14b8a6",
+        accent: "#0f766e",
+        paper: "#f4f6fb",
+        neon: "#0ea5a4",
       },
       boxShadow: {
         retro: "0 0 0 1px rgba(15, 23, 42, 0.15), 6px 6px 0 rgba(15, 23, 42, 0.15)",
