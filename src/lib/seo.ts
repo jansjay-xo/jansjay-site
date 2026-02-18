@@ -1,10 +1,28 @@
 import type { Metadata } from "next";
 
+const DEFAULT_SITE_URL = "https://jansjay.com";
+
+function resolveSiteUrl(): string {
+  const rawValue = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+
+  if (!rawValue) {
+    return DEFAULT_SITE_URL;
+  }
+
+  const normalizedValue = /^https?:\/\//i.test(rawValue) ? rawValue : `https://${rawValue}`;
+
+  try {
+    return new URL(normalizedValue).origin;
+  } catch {
+    return DEFAULT_SITE_URL;
+  }
+}
+
 export const siteConfig = {
   name: "Jansjay LLC",
   description:
     "Portfolio for Jansjay LLC featuring digital project and program leadership work, resume, and contact details.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://jansjay.com",
+  url: resolveSiteUrl(),
   ogImage: "/og/default-og.svg",
 };
 
