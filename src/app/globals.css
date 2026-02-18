@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #f4f6fb;
+  --background: #f0f4f7;
   --surface: #ffffff;
-  --text: #0f172a;
-  --muted-text: #475569;
-  --border: rgba(15, 23, 42, 0.16);
-  --accent: #0f766e;
-  --accent-2: #0ea5a4;
-  --accent-ink: #ecfeff;
+  --text: #08121c;
+  --muted-text: #4a6c8c;
+  --border: rgba(74, 108, 140, 0.24);
+  --accent: #00d4ff;
+  --accent-2: #ff6b6b;
+  --accent-ink: #08121c;
   --grain-opacity: 0.04;
   --font-heading: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   --font-body: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
@@ -31,8 +31,8 @@ body {
   line-height: 1.65;
   text-rendering: optimizeLegibility;
   background:
-    radial-gradient(circle at 10% 0%, rgba(15, 118, 110, 0.13), transparent 33%),
-    radial-gradient(circle at 90% 100%, rgba(14, 165, 164, 0.1), transparent 40%),
+    radial-gradient(circle at 12% 0%, rgba(0, 212, 255, 0.15), transparent 36%),
+    radial-gradient(circle at 88% 100%, rgba(255, 107, 107, 0.1), transparent 44%),
     var(--background);
 }
 
@@ -80,8 +80,8 @@ a {
 }
 
 a:hover {
-  color: var(--accent);
-  text-decoration-color: color-mix(in srgb, var(--accent-2) 60%, transparent);
+  color: color-mix(in srgb, var(--text) 76%, var(--accent-2));
+  text-decoration-color: color-mix(in srgb, var(--accent-2) 62%, transparent);
 }
 
 a:focus-visible,
@@ -172,7 +172,7 @@ main {
 
 .btn-primary:hover {
   transform: translate(-1px, -1px);
-  background: color-mix(in srgb, var(--accent) 70%, var(--accent-2));
+  background: color-mix(in srgb, var(--accent) 84%, #00b8e0);
   box-shadow: 4px 4px 0 rgba(15, 23, 42, 0.2);
 }
 
@@ -227,6 +227,48 @@ main {
   color: var(--text);
   text-decoration: underline;
   text-underline-offset: 0.22em;
+}
+
+.section-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: color-mix(in srgb, var(--muted-text) 86%, var(--text));
+}
+
+.neo-pill {
+  border: 1px solid color-mix(in srgb, #4a6c8c 34%, transparent);
+  background: color-mix(in srgb, #4a6c8c 14%, var(--surface));
+  color: color-mix(in srgb, var(--text) 90%, #4a6c8c);
+}
+
+.neo-badge {
+  border: 1px solid color-mix(in srgb, var(--accent) 36%, transparent);
+  background: color-mix(in srgb, var(--accent) 16%, var(--surface));
+  color: var(--text);
+}
+
+.neo-divider {
+  border-color: color-mix(in srgb, #4a6c8c 30%, transparent);
+}
+
+.neo-input {
+  width: 100%;
+  border-radius: 0.6rem;
+  border: 1px solid color-mix(in srgb, #4a6c8c 40%, transparent);
+  background: color-mix(in srgb, var(--surface) 94%, transparent);
+  color: var(--text);
+  padding: 0.56rem 0.75rem;
+}
+
+.neo-input::placeholder {
+  color: color-mix(in srgb, var(--muted-text) 74%, transparent);
+}
+
+.neo-input:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent) 70%, white);
+  outline-offset: 2px;
 }
 
 @media (prefers-reduced-motion: reduce) {

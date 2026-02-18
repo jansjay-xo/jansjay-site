@@ -9,9 +9,9 @@ type CaseStudyCardProps = {
 export function CaseStudyCard({ study }: CaseStudyCardProps) {
   return (
     <article className="section-card">
-      <p className="text-xs uppercase tracking-[0.13em] text-slate-500">{study.summary.role}</p>
+      <p className="section-label">{study.summary.role}</p>
       <h2 className="mt-2 text-2xl font-semibold">{study.title}</h2>
-      <p className="mt-3 text-slate-700">{study.teaser}</p>
+      <p className="mt-3">{study.teaser}</p>
       <TagPills items={study.skills} className="mt-5" />
       <div className="mt-6">
         <Link href={`/work/${study.slug}`} className="btn-base btn-secondary">

@@ -16,10 +16,10 @@ export function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="section-card space-y-4" aria-label="Contact form">
       <h2>Quick message</h2>
-      <p className="text-sm text-slate-600">Optional form for initial outreach.</p>
+      <p className="text-sm">Optional form for initial outreach.</p>
 
       <div className="space-y-1.5">
-        <label htmlFor="name" className="text-sm font-medium text-slate-800">
+        <label htmlFor="name" className="section-label">
           Name
         </label>
         <input
@@ -27,13 +27,13 @@ export function ContactForm() {
           name="name"
           type="text"
           required
-          className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 placeholder:text-slate-400"
+          className="neo-input"
           placeholder="Your name"
         />
       </div>
 
       <div className="space-y-1.5">
-        <label htmlFor="email" className="text-sm font-medium text-slate-800">
+        <label htmlFor="email" className="section-label">
           Email
         </label>
         <input
@@ -41,13 +41,13 @@ export function ContactForm() {
           name="email"
           type="email"
           required
-          className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 placeholder:text-slate-400"
+          className="neo-input"
           placeholder="name@company.com"
         />
       </div>
 
       <div className="space-y-1.5">
-        <label htmlFor="message" className="text-sm font-medium text-slate-800">
+        <label htmlFor="message" className="section-label">
           Message
         </label>
         <textarea
@@ -55,7 +55,7 @@ export function ContactForm() {
           name="message"
           required
           rows={4}
-          className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 placeholder:text-slate-400"
+          className="neo-input"
           placeholder="How can we work together?"
         />
       </div>
@@ -64,7 +64,7 @@ export function ContactForm() {
         Send message
       </button>
 
-      <p className="text-sm text-slate-600" aria-live="polite">
+      <p className="text-sm" aria-live="polite">
         {submitState === "submitted" ? "Thanks. This demo form is wired to a placeholder handler." : "Form submissions are currently placeholder only."}
       </p>
     </form>

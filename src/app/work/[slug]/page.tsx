@@ -47,9 +47,9 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
         <Link href="/work" className="btn-base btn-secondary">
           Back to Work
         </Link>
-        <p className="text-xs font-semibold uppercase tracking-[0.13em] text-slate-500">{study.summary.role}</p>
+        <p className="section-label">{study.summary.role}</p>
         <h1 className="max-w-4xl text-3xl font-semibold tracking-tight sm:text-4xl">{study.title}</h1>
-        <p className="max-w-3xl text-slate-700">{study.teaser}</p>
+        <p className="max-w-3xl">{study.teaser}</p>
         <TagPills items={study.skills} />
       </div>
 
@@ -58,12 +58,12 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
       <article className="section-card space-y-6">
         <section className="space-y-2">
           <h2>Challenge</h2>
-          <p className="text-slate-700">{study.challenge}</p>
+          <p>{study.challenge}</p>
         </section>
 
         <section className="space-y-2">
           <h2>Approach</h2>
-          <ul className="list-disc space-y-2 pl-5 text-slate-700">
+          <ul className="list-disc space-y-2 pl-5">
             {study.approach.map((item) => (
               <li key={item}>{item}</li>
             ))}
@@ -72,7 +72,7 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
 
         <section className="space-y-2">
           <h2>Impact</h2>
-          <ul className="list-disc space-y-2 pl-5 text-slate-700">
+          <ul className="list-disc space-y-2 pl-5">
             {study.impact.map((item) => (
               <li key={item}>{item}</li>
             ))}

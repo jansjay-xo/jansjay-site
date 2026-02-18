@@ -8,13 +8,13 @@ type FeaturedWorkCardProps = {
 export function FeaturedWorkCard({ study }: FeaturedWorkCardProps) {
   return (
     <article className="section-card flex h-full flex-col">
-      <p className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">{study.summary.role}</p>
+      <p className="section-label">{study.summary.role}</p>
       <h3 className="mt-2 text-xl font-semibold">{study.title}</h3>
-      <p className="mt-3 text-sm text-slate-700">{study.teaser}</p>
+      <p className="mt-3 text-sm">{study.teaser}</p>
 
-      <div className="mt-4 border-t border-slate-900/10 pt-4">
-        <p className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Outcome highlight</p>
-        <p className="mt-1 text-sm text-slate-700">{study.summary.outcomes[0]}</p>
+      <div className="neo-divider mt-4 border-t pt-4">
+        <p className="section-label">Outcome highlight</p>
+        <p className="mt-1 text-sm">{study.summary.outcomes[0]}</p>
       </div>
 
       <div className="mt-6">

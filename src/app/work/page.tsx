@@ -14,7 +14,7 @@ export default function WorkPage() {
   return (
     <section className="space-y-7">
       <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">Case Studies</h1>
-      <p className="max-w-3xl text-slate-700">
+      <p className="max-w-3xl">
         A data-driven overview of delivery and transformation work relevant to Senior Project Manager, Associate Project Director,
         and Associate Program Manager opportunities.
       </p>

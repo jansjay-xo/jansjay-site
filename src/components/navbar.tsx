@@ -21,7 +21,7 @@ export function Navbar() {
   }, [pathname]);
 
   return (
-    <header className="z-50 border-b border-slate-900/10 bg-[color:color-mix(in_srgb,var(--surface)_80%,transparent)] backdrop-blur md:sticky md:top-0">
+    <header className="z-50 border-b border-[var(--border)] bg-[color:color-mix(in_srgb,var(--surface)_80%,transparent)] backdrop-blur md:sticky md:top-0">
       <nav className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
         <Link
           href="/"
