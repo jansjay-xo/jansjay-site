@@ -17,21 +17,17 @@ export default function AboutPage() {
           Senior delivery leader focused on digital project and program execution.
         </h1>
         <p className="max-w-3xl text-slate-700">
-          I lead complex initiatives from planning through adoption, keeping strategy, delivery teams, and stakeholders aligned.
-          My work centers on predictable execution, transparent decision-making, and outcomes that hold up beyond launch.
+          I am a senior delivery leader with 15+ years of experience leading digital projects and programs in fast-paced,
+          cross-functional environments. I am at my best when initiatives are complex, priorities are shifting, and teams need clear
+          structure to keep momentum.
         </p>
       </header>
 
       <article className="section-card space-y-3 text-slate-700">
         <h2>My approach</h2>
         <p>
-          I start by establishing shared clarity: what success looks like, what constraints matter, and which risks can change the
-          path. From there, I build practical delivery structures with clear ownership, realistic milestones, and communication
-          cadences that keep teams moving without unnecessary process overhead.
-        </p>
-        <p>
-          I care about both speed and stability. That means creating enough rigor to avoid surprises while keeping plans flexible as
-          priorities evolve.
+          My approach is straightforward: align on outcomes, define accountable plans, and make risks visible early. I build
+          delivery systems that improve decision quality, reduce surprises, and keep teams focused on what matters most.
         </p>
       </article>
 
@@ -64,6 +60,15 @@ export default function AboutPage() {
         <p>
           Core practices include weekly planning cadences, dependency mapping, RAID tracking, clear decision logs, and concise
           executive updates.
+        </p>
+      </article>
+
+      <article className="section-card space-y-3 text-slate-700">
+        <h2>How I engage through Jansjay LLC</h2>
+        <p>
+          Through Jansjay LLC, I support organizations with targeted delivery leadership, from program recovery and PMO rhythm design
+          to cross-functional execution support. It is the same operating style I bring to full-time leadership roles: practical,
+          outcome-oriented, and people-centered.
         </p>
       </article>
     </section>

@@ -15,7 +15,10 @@ export default function ContactPage() {
     <section className="space-y-7">
       <header className="section-card space-y-4">
         <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">Contact</h1>
-        <p className="max-w-3xl text-slate-700">Open to senior digital delivery roles and selective consulting through Jansjay LLC.</p>
+        <p className="max-w-3xl text-slate-700">
+          If you are hiring for a senior delivery role or need project/program leadership support through Jansjay LLC, I would be
+          glad to connect.
+        </p>
 
         <div className="rounded-xl border border-teal-800/20 bg-teal-700/10 px-4 py-3">
           <p className="text-sm font-medium text-teal-900">Open to roles: Sr Project Manager, Associate Project Director, Associate Program Manager</p>
@@ -42,6 +45,13 @@ export default function ContactPage() {
           </Link>
         </p>
         <p className="text-sm text-slate-600">Timezone: America/New_York</p>
+      </article>
+
+      <article className="section-card space-y-3 text-slate-700">
+        <h2>Hiring manager outreach</h2>
+        <p>Reach out to discuss full-time opportunities, team scope, and business priorities.</p>
+        <h2>Consulting/project inquiry</h2>
+        <p>Reach out for fractional or project-based delivery leadership through Jansjay LLC.</p>
       </article>
 
       <ContactForm />
